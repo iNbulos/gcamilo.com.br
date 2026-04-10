@@ -63,7 +63,12 @@
     font-family: 'Inter', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Space Grotesk', sans-serif;
   }
 }
@@ -95,10 +100,20 @@
   }
 
   .skill-badge {
-    @apply px-4 py-2 rounded-lg bg-secondary text-foreground font-medium text-sm
-           border border-border/50 transition-all duration-300
-           hover:border-primary/50 hover:bg-secondary/80;
+    @apply px-4 py-2 rounded-lg bg-secondary text-foreground font-medium text-sm border border-border/50 transition-all duration-300 hover:border-primary/50 hover:bg-secondary/80;
   }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE e Edge antigo */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
 }
 
 @layer utilities {
